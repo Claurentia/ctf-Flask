@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='site.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/Seattle_Redhawks_logo.svg.png') }}">
+    <meta charset="UTF-8">
+    <title>Task 1</title>
+</head>
+
+<body>
+    <a class="gohome" href="{{ url_for('home') }}">Go home</a>
+    <h1>A picture can be worth a thousand words...or one flag</h1>
+    <img src="{{ url_for('static', filename='images/Seattle_Redhawks_logo.svg.png') }}" alt="Seattle U logo"
+         height="200px" width="200px">
+    <p>Download the image
+        <a href="{{ url_for('static', filename='images/Seattle_Redhawks_logo.svg.png') }}" download="SU_Logo">here
+        </a></p>
+</body>
+</html>

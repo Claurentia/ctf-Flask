@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../site.css">
     <meta charset="UTF-8">
     <title>Task 6</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='site.css') }}">
 </head>
 <body>
-    <a class="gohome" href="../index.html">Go home</a>
+    <a class="gohome" href="{{ url_for('home') }}">Go home</a>
     <h3 style="padding: 25px;padding-top: 14vh;">
         <h1 class="text-center" style="color:red">Good Luck Have Fun!</h1>
     <h3 style="padding: 15px;padding-top: 14vh;">
-        <h1 class="text-center">Go find your flag! <a href="../runme.py" style="color: #eb52d1" download="runme.py">file</a></h1>
+        <h1 class="text-center">Go find your flag! <a href="{{ url_for('static', filename='RunMe.py') }}" style="color: #eb52d1" download="runme.py">file</a></h1>
     </h3>
     </h3>
 </body>

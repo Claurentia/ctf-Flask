@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Task 5</title>
-    <link rel="stylesheet" href="../site.css">
-    <link rel="icon" type="image/x-icon" href="../Seattle_Redhawks_logo.svg.png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='site.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/Seattle_Redhawks_logo.svg.png') }}">
 </head>
 <body>
-    <a class="gohome" href="../index.html">Go home</a>
+    <a class="gohome" href="{{ url_for('home') }}">Go home</a>
     <h1>What does it all mean?</h1>
     <h3>ZmxhZ3tiNjRf</h3>
 

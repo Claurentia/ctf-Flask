@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../site.css">
     <meta charset="UTF-8">
-    <title>Task 6</title>
+    <title>Task 9</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='site.css') }}">
 </head>
 <body style="background-color: black">
-    <a class="gohome" style="color:white" href="../index.html">Go home</a>
+    <a class="gohome" style="color:white" href="{{ url_for('home') }}">Go home</a>
     <h3 style="padding: 50px;padding-top: 14vh;">
-
-        <h1 class="text-center" style="color:white">Hello CPSC 4710/5710 students. Please download this <a href="../task9.txt" style="color: #eb52d1" download="task9.txt">file</a>.
+        <h1 class="text-center" style="color:white">Hello CPSC 4710/5710 students. Please download this <a href="{{ url_for('static', filename='task9.txt') }}" style="color: #eb52d1" download="task9.txt">file</a>.
         </h1>
         <h1 class="text-center" style="color:white">It will lead you on the road to finding the flag.</h1>
     </h3>

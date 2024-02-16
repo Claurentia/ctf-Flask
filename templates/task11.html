@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 11</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='site.css') }}">
+</head>
+<body class="pages">
+
+<a class="gohome" href="{{ url_for('home') }}">Go Home</a>
+<div class="center">
+  <style>
+    body {
+      background-image: url("{{ url_for('static', filename='images/book.jpg') }}");
+    }
+  </style>
+  <h1>What is missing?</h1>
+  <a href="{{ url_for('page10') }}">page1</a> <br/> <br/>
+  <a href="{{ url_for('page11') }}">page2</a> <br/> <br/>
+  <a href="{{ url_for('page15') }}">page3</a> <br/> <br/>
+  <a href="{{ url_for('page16') }}">page4</a> <br/> <br/>
+  <a href="{{ url_for('page17') }}">page5</a> <br/> <br/>
+  <a href="{{ url_for('page18') }}">page6</a> <br/> <br/>
+  <a href="{{ url_for('page19') }}">page7</a> <br/> <br/>
+</div>
+
+</body>
+</html>

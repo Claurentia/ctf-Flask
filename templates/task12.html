@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../site.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='site.css') }}">
     <meta charset="UTF-8">
     <title>Task 12</title>
 </head>
 <body class="passwords">
-    <a class="gohome" href="../index.html" style="color: whitesmoke">Go home</a>
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='images/password_bg.jpg') }}");
+        }
+    </style>
+    <a class="gohome" href="{{ url_for('home') }}" style="color: whitesmoke">Go home</a>
 
-    <script type="text/javascript" src="../js_scripts/task12Script.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js_scripts/task12Script.js') }}"></script>
     <div class="center">
         <h1>Find THE Password</h1>
         <br/>
