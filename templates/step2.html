@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Task 10</title>
+    <title>Congratulations</title>
     <style>
         body {
             background-color: black;
             color: white;
             font-family: monospace;
             display: flex;
+            flex-direction: column; 
             align-items: center;
             justify-content: center;
             height: 100vh;
             margin: 0;
-        }
-
-        input[type="text"] {
-            background-color: black;
-            color: white;
-            border: 2px solid white;
-            padding: 10px;
-            font-family: monospace;
         }
         .gohome {
             position: absolute;
@@ -30,16 +23,9 @@
             font-size: 10px;
         }
     </style>
-    <script type="text/javascript" src="{{ url_for('static', filename='js_scripts/display_flag.js') }}"></script>
-
 </head>
 <body>
     <a class="gohome" href="{{ url_for('home') }}">Go home</a>
-
-    <form method="POST">
-        <input type="text" id="answerField" placeholder="Enter your answer...">
-        <button type='button' id="submit" onclick="decrypt()">Submit</button>
-    </form>
+    <h2>Oh it's totally a phishing scam, sorryyyy~</h2>
 </body>
-</script>
 </html>
