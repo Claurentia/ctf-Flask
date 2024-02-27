@@ -15,3 +15,13 @@ function login() {
         document.getElementById('error').innerHTML = "Incorrect Password"
     }
 }
+
+function decrypt(){
+    var pass = document.getElementById('answerField').value;
+    if (pass === 'N0t@PhishingSc@m'){
+        window.location.href = '/task10/step2';
+    }
+    else{
+        document.getElementById('error').innerHTML = "Incorrect Password"
+    }
+}

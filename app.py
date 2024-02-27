@@ -1,5 +1,6 @@
-from flask import Flask, render_template, send_from_directory
+from flask import Flask, redirect, render_template, request, send_from_directory, url_for
 from waitress import serve
+
 
 app = Flask(__name__)
 
@@ -58,6 +59,10 @@ def task9():
 @app.route('/task10')
 def task10():
     return render_template('task10.html')
+
+@app.route('/task10/step2')
+def decrypt():
+    return render_template('step2.html')
 
 @app.route('/task11')
 def task11():
